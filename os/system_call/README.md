@@ -4,6 +4,7 @@
 
 ![SystemCallPart](image/system_call.png)
 
+<br>
 
  1. 시스템 콜 또는 시스템 호출 인터페이스
  <br>
