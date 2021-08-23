@@ -45,7 +45,7 @@
 
 <br>
 
-###📌Event And Interrupt
+## 📌 Event And Interrupt
 
 ● Interruptは一種イベントと呼ばれます<br>
 ● イベントに合わせてOSが処理<br>
