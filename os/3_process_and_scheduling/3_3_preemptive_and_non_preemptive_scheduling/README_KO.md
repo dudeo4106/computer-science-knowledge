@@ -22,7 +22,7 @@
 ○ 프로세스가 자발적으로 blocking 상태로 들어가거나, 실행이 끝났을 때만, 다른 프로세스로 교체 가능
 ```
 
-![NonPreemptiveScheduling](./image/non_preemptive_scheduling.png)
+![Scheduling](./image/scheduling.png)
 
 ● Preemptive Scheduler
 ```

@@ -22,7 +22,7 @@
 ○ プロセスが自発的にblocking 状態に入るか、実行が終わった時のみ、別のプロセスに切り替え可能
 ```
 
-![NonPreemptiveScheduling](./image/non_preemptive_scheduling.png)
+![NonPreemptiveScheduling](./image/scheduling.png)
 
 ● Preemptive Scheduler
 ```

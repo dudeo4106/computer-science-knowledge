@@ -17,3 +17,7 @@
 ## [🔗 Preemptive and Non-preemptive Scheduling](3_3_preemptive_and_non_preemptive_scheduling)
 
 <br>
+
+## [🔗 Interrupt](3_4_interrupt)
+
+<br>
