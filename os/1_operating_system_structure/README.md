@@ -6,8 +6,8 @@
 
 <br>
 
-## [🔗 System Call](system_call)
+## [🔗 System Call](1_1_system_call)
 <br>
 
-## [🔗 User and Kernel Mode](user_and_kernel_mode)
+## [🔗 User and Kernel Mode](1_2_user_and_kernel_mode)
 <br>
