@@ -22,6 +22,6 @@
 
 <br>
 
-## [🔗 ProcessStructure](3_5_process_structure)
+## [🔗 Process Structure](3_5_process_structure)
 
 <br>
