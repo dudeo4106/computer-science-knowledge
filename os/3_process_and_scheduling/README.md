@@ -25,3 +25,7 @@
 ## [🔗 Process Structure](3_5_process_structure)
 
 <br>
+
+## [🔗 Context Switching](3_6_context_switching)
+
+<br>
