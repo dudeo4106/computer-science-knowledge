@@ -29,3 +29,7 @@
 ## [🔗 Context Switching](3_6_context_switching)
 
 <br>
+
+## [🔗 Process Communication](3_7_process_and_ipc)
+
+<br>
