@@ -33,3 +33,7 @@
 ## [🔗 Process Communication](3_7_process_and_ipc)
 
 <br>
+
+## [🔗 ProcessFinalSummary](3_8_ipc_technique)
+
+<br>
