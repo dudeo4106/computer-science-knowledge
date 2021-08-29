@@ -34,6 +34,10 @@
 
 <br>
 
-## [🔗 ProcessFinalSummary](3_8_ipc_technique)
+## [🔗 IPC_Technique](3_8_ipc_technique)
+
+<br>
+
+## [🔗 ProcessFinalSummary](3_9_process_final_summary)
 
 <br>
