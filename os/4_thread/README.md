@@ -6,6 +6,6 @@
 
 <br>
 
-## [🔗 ThreadBasicConcept](4_1_thread_basic_concept)
+## [🔗 Thread Basic Concept](4_1_thread_basic_concept)
 
 <br>
