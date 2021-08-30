@@ -38,6 +38,6 @@
 
 <br>
 
-## [🔗 Signal_And_Socket](3_9_signal_and_socket)
+## [🔗 Signal And Socket](3_9_signal_and_socket)
 
 <br>
