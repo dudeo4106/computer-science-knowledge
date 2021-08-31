@@ -64,7 +64,7 @@
 
 ● Multi Thread <br>
 
-![MultiThread](./image /multi_thread.png)
+![MultiThread](./image/multi_thread.png)
 
 ● スレッドを多く生成すると、Context Switchingが多く起こり、性能低下<br>
 ● Example: LinuxではThreadをProcessのように扱います。
