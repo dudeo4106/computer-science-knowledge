@@ -23,7 +23,7 @@
 
 <br>
 
-##📌 Mutual exclusion (相互排除)
+## 📌 Mutual exclusion (相互排除)
 
 ● critical resource<br>
 ● critical section
@@ -83,7 +83,7 @@ signal(S) {
 
 <br>
 
-##📌 Semaphore - 忙しい待機。
+## 📌 Semaphore - 忙しい待機。
 
 ● wait()はSが0なら、臨界領域に入るため、loop文修行します。
 ```
