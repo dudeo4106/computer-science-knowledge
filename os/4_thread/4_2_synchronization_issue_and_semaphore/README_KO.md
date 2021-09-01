@@ -54,23 +54,23 @@ lock.release()
 ```
 ○ S값이 1이상이면, 임계 영역 진입 후, S값 1차감(S값이 0이면 대기)
 ```
-● V: 증가 (임계영역에 나올 때)
-```
-○ S값을 1더하고, 임계 영역을 나옴
-```
-● S: Semaphore Value(초기 값만큼 여러 프로세스가 동시 임계 영역 접근 가능)
 ```
 P(S): wait(S) {
     while S <= 0; // wait
         S--;      // limit access
 }
 ```
+● V: 증가 (임계영역에 나올 때)
+```
+○ S값을 1더하고, 임계 영역을 나옴
+```
 ```
 V(S): signal(S) {
     S++; // allow access
 }
 ```
-● wakeup() 함수를 통해 대기큐에 있는 프로세스 재실행
+● S: Semaphore Value(초기 값만큼 여러 프로세스가 동시 임계 영역 접근 가능)
+> wakeup() 함수를 통해 대기큐에 있는 프로세스 재실행
 ```
 signal(S) {
     S->count++;
