@@ -13,3 +13,7 @@
 ## [🔗 Synchronization Issue And Semaphore](4_2_synchronization_issue_and_semaphore)
 
 <br>
+
+## [🔗 Deadlock And Starvation](4_3_deadlock_and_starvation)
+
+<br>
