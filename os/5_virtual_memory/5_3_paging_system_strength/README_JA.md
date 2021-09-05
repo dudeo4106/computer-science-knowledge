@@ -42,7 +42,7 @@
 ● プロセス間で同一の物理アドレスを指せます（省スペース、メモリ割り当ての時間節約）<br>
 ● 物理アドレスデータ変更時
 ```
-○ 物理アドレスにデータを修正する際、物理アドレスをコピーできます（copy-on-write
+○ 物理アドレスにデータを修正する際、物理アドレスをコピーできます(copy-on-write)
 ```
 
 ![PagingAndSharedMemory](./image/paging_and_shared_memory.png)
