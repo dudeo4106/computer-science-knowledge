@@ -5,7 +5,9 @@
 ## 📌 what is page fault?
 
 ● 32bitシステムで4KBページのためのページングシステムとは？<br>
-● オペレーティングシステムがpage faultが起きたら、該当ページを物理メモリにアップロードします。
+● オペレーティングシステムがpage faultが起きたら、該当ページを物理メモリにアップロードします。<br>
+
+<br>
 
 ## 📌 page fault and interrupt
 

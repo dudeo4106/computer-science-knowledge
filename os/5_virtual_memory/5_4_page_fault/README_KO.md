@@ -7,6 +7,8 @@
 ● 32bit 시스템에서 4KB 페이지를 위한 페이징 시스템이란?<br>
 ● 운영체제가 page fault가 일어나면, 해당 페이지를 물리 메모리에 올림<br>
 
+<br>
+
 ## 📌 page fault and interrupt
 
 ![PageFaultFlow](./image/page_fault_flow.png)
