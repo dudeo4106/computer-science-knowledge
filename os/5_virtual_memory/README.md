@@ -14,7 +14,7 @@
 
 <br>
 
-## [🔗 Multi-Level Paging System](5_3_multi_level_paging_system)
+## [🔗 Paging System Strength](5_3_paging_system_strength)
 
 <br>
 
