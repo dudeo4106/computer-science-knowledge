@@ -22,3 +22,7 @@
 
 <br>
 
+## [🔗 Page Replacement Algorithm](5_5_page_replacement_algorithm)
+
+<br>
+
