@@ -1,4 +1,4 @@
-# 🔑 Inode And Virtual File System
+# 🔑 Inode and virtual file system
 
 <br>
 
