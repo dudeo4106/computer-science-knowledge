@@ -20,7 +20,7 @@
 ○ bootstrap loaderプログラムがある場所を探して実行させます。
 ```
 
-![Boot](./image/boot.png)<br>
+![Booting](./image/booting.png)<br>
 
 <br>
 <br>
