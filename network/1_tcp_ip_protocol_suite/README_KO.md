@@ -1,4 +1,4 @@
-# 🔑 The 7 Layers of OSI
+# 🔑 TCP / IP Protocol suite
 
 <br>
 
@@ -35,7 +35,7 @@ MAC이라고 하는 매체 접근 제어 기능이 있으며 48비트의 주소�
 
 <br>
 
-## 📌 Network Layer
+## 📌 Internet Layer
 
 특정 컴퓨터에 데이터를 보내기 위해서는 IP주소를 알아야한다.<br>
 데이터와 대상 컴퓨터의 IP주소 등의 정보를 정해진 규칙대로 분할시켜서 송신하게 되는데, 이 단위를 패킷이라고 한다.<br>
@@ -55,6 +55,15 @@ MAC이라고 하는 매체 접근 제어 기능이 있으며 48비트의 주소�
 
 마지막으로 이 계층은 운영체제의 커널에 소프트웨어 적으로 구현되어 있다.
 
+[추가]
+
+|Protocol Example|
+|---|
+|IP|
+|ICMP|
+|ARP|
+|...|
+
 <br>
 
 ## 📌 Transport Layer
@@ -73,12 +82,11 @@ Port 번호는 하나의 컴퓨터에서 동시에 실행되고 있는 프로세
 
 [추가]
 
-|Port|Protocol|
-|---|---|
-|22|SSH|
-|80|HTTP|
-|443|HTTPS|
-|...|...|
+|Protocol Example|
+|---|
+|TCP|
+|UDP|
+|...|
 
 <br>
 <br>
@@ -90,8 +98,8 @@ Port 번호는 하나의 컴퓨터에서 동시에 실행되고 있는 프로세
 <br>
 [https://jhnyang.tistory.com/373](https://jhnyang.tistory.com/373)
 <br>
-[https://reakwon.tistory.com/59](https://reakwon.tistory.com/59)
-<br>
 [https://enlqn1010.tistory.com/9](https://enlqn1010.tistory.com/9)
 <br>
 [https://better-together.tistory.com/134](https://better-together.tistory.com/134)
+<br>
+[https://goitgo.tistory.com/25](https://goitgo.tistory.com/25)

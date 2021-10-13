@@ -2,6 +2,6 @@
 
 <br>
 
-## [🔗 The 7 Layers of OSI](1_osi_7_layer)
+## [🔗 TCP / IP Protocol suite](1_tcp_ip_protocol_suite)
 
 <br>

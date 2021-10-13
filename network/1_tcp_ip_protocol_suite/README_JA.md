@@ -1,4 +1,4 @@
-# 🔑 The 7 Layers of OSI
+# 🔑 TCP / IP Protocol suite
 
 <br>
 
@@ -35,7 +35,7 @@ MACという媒体アクセス制御機能があり、48ビットのアドレス
 
 <br>
 
-## 📌 Network Layer
+## 📌 Internet Layer
 
 特定のコンピュータにデータを送るためにはIPアドレスを知る必要があります。<br>
 データと対象コンピュータのIPアドレスなどの情報を、決められたルール通りに分割させて送信しますが、この単位をパケットといいます。<br>
@@ -55,6 +55,15 @@ MACという媒体アクセス制御機能があり、48ビットのアドレス
 
 最後に、この階層はOSのカーネルにソフトウェア的に実装されています。
 
+[追加]
+
+|Protocol Example|
+|---|
+|IP|
+|ICMP|
+|ARP|
+|...|
+
 <br>
 
 ## 📌 Transport Layer
@@ -73,12 +82,11 @@ MACという媒体アクセス制御機能があり、48ビットのアドレス
 
 [追加]
 
-|Port|Protocol|
-|---|---|
-|22|SSH|
-|80|HTTP|
-|443|HTTPS|
-|...|...|
+|Protocol Example|
+|---|
+|TCP|
+|UDP|
+|...|
 
 <br>
 <br>
@@ -90,8 +98,8 @@ MACという媒体アクセス制御機能があり、48ビットのアドレス
 <br>
 [https://jhnyang.tistory.com/373](https://jhnyang.tistory.com/373)
 <br>
-[https://reakwon.tistory.com/59](https://reakwon.tistory.com/59)
-<br>
 [https://enlqn1010.tistory.com/9](https://enlqn1010.tistory.com/9)
 <br>
 [https://better-together.tistory.com/134](https://better-together.tistory.com/134)
+<br>
+[https://goitgo.tistory.com/25](https://goitgo.tistory.com/25)
