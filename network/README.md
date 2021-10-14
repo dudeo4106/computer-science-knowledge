@@ -2,6 +2,6 @@
 
 <br>
 
-## [🔗 TCP / IP Protocol suite](1_tcp_ip_protocol_suite)
+## [🔗 TCP / IP Protocol Suite](1_tcp_ip_protocol_suite)
 
 <br>

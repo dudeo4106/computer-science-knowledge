@@ -1,4 +1,4 @@
-# 🔑 TCP / IP Protocol suite
+# 🔑 TCP / IP Protocol Suite
 
 > It was 4 layers, it has been updated to 5 layers
 
