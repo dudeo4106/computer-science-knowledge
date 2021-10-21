@@ -44,6 +44,32 @@ Exclusive Lock이 해제될 때까지 다른 트랜잭션(읽기 포함)은 해�
 
 <br>
 
+## 📌 Blocking
+
+블로킹은 Lock(Exclusive - Exclusive, Exclusive - Shared)의 경합이 발생하여 특정 Transaction이 작업을 진행하지 못하고 멈춰선 상태를 말합니다.<br>
+Shared Lock끼리는 블로킹이 발생하지 않지만 Exclusive Lock은 블로킹을 발생시킵니다.<br>
+블로킹을 해소하기 위해서는 이전 트랜잭션이 Commit or RollBack 되어야하며, 이러한 경합은 성능을 안좋게 만들기때문에 최소화 시켜야한다.<br>
+
+해소방법
+
+- 한 트랜잭션의 길이를 너무 길게 하지않는다.
+- 같은 데이터를 갱신하는 트랜잭션이 동시에 수행되지 않도록 해야한다.
+- Isolation Level을 불필요하게 상향조정하지 않고 쿼리 수행시간을 짧게 한다.
+
+<br>
+
+## 📌 DeadLock
+
+프로세스가 자원을 얻지 못해 다음 처리를 하지 못하는 상태로, 시스템적으로 한정된 자원을 여러 곳에서 사용하려 할 때 발생<br>
+
+발생되는 상황으론 멀티 프로그래밍 환경에서 한정된 자원을 사용하려고 서로 경쟁하는 상황이 발생 할 때<br>
+어떤 프로세스가 지원을 요청 했을 때 그 시각에 그 자원을 사용할 수 없는 상황이 발생, 프로세스가 대기 상태가 된다.<br>
+대기상태로 들어간 프로세스들이 실행 상태로 변경 될 수 없을 때 DeadLock이라고 한다.
+
+* 상세내용은 DeadLock 파트에서 다시 다루기로 한다.
+
+<br>
+
 ---
 
 📚 참고
@@ -55,3 +81,6 @@ Exclusive Lock이 해제될 때까지 다른 트랜잭션(읽기 포함)은 해�
 [https://sabarada.tistory.com/121](https://sabarada.tistory.com/121)
 <br>
 [https://doooyeon.github.io/2018/09/29/transaction-isolation-level.html](https://doooyeon.github.io/2018/09/29/transaction-isolation-level.html)
+<br>
+[https://jwprogramming.tistory.com/12](https://jwprogramming.tistory.com/12)
+<br>
