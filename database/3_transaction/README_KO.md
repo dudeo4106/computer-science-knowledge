@@ -55,6 +55,24 @@ A은행에서 출금한 돈이 B은행에 잘 도착하면 송금처리를 완�
 
 <br>
 
+## 📌 UNDO, REDO
+
+> REDO: 다시 하다
+
+> UNDO: 원상태로 돌리다.
+
+● REDO: 이전 상태로 되돌아 간 후, 실패가 발생하기 전까지 과정을 그대로 따라가는 것을 의미하며 이 과정을 기록해야 하는데 이를 log라고 한다.<br>
+● UNDO: 트랜잭션을 이전 상태로 되돌리는 것을 의미(RollBack, 읽기 일관성)<br>
+
+```
+복구는 UNDO를 이용해 복구를 한다. 즉 RollBack을 한다.
+하지만 시스템 장애가 발생하면 UNDO 데이터도 모두 삭제되어, REDO 데이터를 이용해서 마지막 CheckPoint(SavePoint)부터 장애까지의 BufferCache를 복구하게 된다.
+이게 완료 되면 UNDO를 이용해서 Commit 되지 않은 데이터를 모두 RollBack 함으로써 복구를 완료하게 된다.
+결국 REDO가 UNDO를 복구하고 최종적으로 UNDO가 복구를 하게 됩니다.
+```
+
+<br>
+
 ---
 
 📚 참고
@@ -66,3 +84,7 @@ A은행에서 출금한 돈이 B은행에 잘 도착하면 송금처리를 완�
 [https://mozi.tistory.com/209](https://mozi.tistory.com/209)
 <br>
 [https://coding-factory.tistory.com/226](https://coding-factory.tistory.com/226)
+<br>
+[https://victorydntmd.tistory.com/130](https://victorydntmd.tistory.com/130)
+<br>
+[https://brownbears.tistory.com/181](https://brownbears.tistory.com/181)

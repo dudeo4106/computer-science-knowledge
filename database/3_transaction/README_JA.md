@@ -22,8 +22,6 @@ A銀行から引き出されたお金がB銀行にちゃんと届いたら送金
 
 <br>
 
-<br>
-
 ## 📌 TCL
 
 TCLとはトランザクションを制御する言語。
@@ -57,16 +55,36 @@ TCLとはトランザクションを制御する言語。
 
 <br>
 
+## 📌 UNDO, REDO
+
+>REDO: やり直し
+
+>UNDO: 元の状態に回す
+
+●REDO: 以前の状態に戻った後、失敗が発生する前の過程をそのまま従うことを意味し、この過程を記録しなければならないが、これをlogといいます。<br>
+●UNDO: トランザクションを元の状態に戻すことを意味します（RollBack、読み込み一貫性）<br>
+
+```
+復旧はUNDOを利用して復旧します。 つまりRollBackをします。
+しかし、システム障害が発生するとUNDOデータもすべて削除され、REDOデータを利用して最後のCheckPoint(SavePoint)から障害までのBufferCacheが復旧される。
+これが完了すると、UNDOを利用してCommitされていないデータをすべてRollBackすることで復旧を完了します。
+結局、REDOがUNDOを復旧し、最終的にUNDOが復旧することになります。
+```
+
+<br>
+
 ---
 
 📚 参考
 <br>
-[https://mangkyu.tistory.com/110](https://mangkyu.tistory.com/110)
+[https://wonit.tistory.com/462](https://wonit.tistory.com/462)
 <br>
-[https://3months.tistory.com/193](https://3months.tistory.com/193)
+[https://devuna.tistory.com/30](https://devuna.tistory.com/30)
 <br>
-[https://wkdtjsgur100.github.io/database-normalization/](https://wkdtjsgur100.github.io/database-normalization/)
+[https://mozi.tistory.com/209](https://mozi.tistory.com/209)
 <br>
-[https://yaboong.github.io/database/2018/03/10/database-normalization-2/](https://yaboong.github.io/database/2018/03/10/database-normalization-2/)
+[https://coding-factory.tistory.com/226](https://coding-factory.tistory.com/226)
 <br>
-[https://minimax95.tistory.com/entry/%EC%A0%95%EA%B7%9C%ED%99%94Normalization-%EA%B0%9C%EB%85%90%EA%B3%BC-%EC%A0%95%EA%B7%9C%ED%99%94-%EA%B3%BC%EC%A0%954NF-5NF](https://minimax95.tistory.com/entry/%EC%A0%95%EA%B7%9C%ED%99%94Normalization-%EA%B0%9C%EB%85%90%EA%B3%BC-%EC%A0%95%EA%B7%9C%ED%99%94-%EA%B3%BC%EC%A0%954NF-5NF)
+[https://victorydntmd.tistory.com/130](https://victorydntmd.tistory.com/130)
+<br>
+[https://brownbears.tistory.com/181](https://brownbears.tistory.com/181)
