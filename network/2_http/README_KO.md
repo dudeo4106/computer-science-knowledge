@@ -77,7 +77,7 @@ Content-Length: 메세지 body의 길이<br>
 
 1. HTTP Version: 버전
 2. Status code: 응답 상태를 나타내는 숫자 코드
-3. Status Text: 응탑 상태를 설명해 주는 부분
+3. Status Text: 응답 상태를 설명해 주는 부분
 
 ● Headers
 
