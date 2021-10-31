@@ -71,6 +71,58 @@ Content-Length: 메세지 body의 길이<br>
 
 ## 📌 HTTP Response 구조
 
+● Start line
+
+> HTTP/1.1 401 BadRequest
+
+1. HTTP Version: 버전
+2. Status code: 응답 상태를 나타내는 숫자 코드
+3. Status Text: 응탑 상태를 설명해 주는 부분
+
+● Headers
+
+Request Header와 기본적으로 동일하며, Response에서 사용되는 특정 Header가 있는데 User-Agent 대신에 Server가 들어간다.
+
+● Body
+
+Request body와 마찬가지로 실제 데이터 전송이 필요없는 경우 body가 빈다<br>
+
+<br>
+
+## 📌 URL
+
+URL(Uniform Resource Locators)은 개발자가 아니더라도 이미 우리에게 익숙한 용어이며, 서버에 자원을 요청하기 위해 입력하는 영문주소<br>
+
+> https://www.google.com:443/path/resource?a=1&b=2
+
+http: protocol<br>
+www.google.com: host<br>
+443: port<br>
+path/resource: resource path<br>
+query: a=1&b=2<br>
+
+<br>
+
+## 📌 HTTP Request Method
+
+URL를 이용하면 서버에 특정 데이터를 요청할 수 있는데 요청하는 데이터에 특정 동작을 수행하고 싶으면 HTTP Request Method를 사용
+
+● GET: 존재하는 자원에 대한 요청<br>
+● POST: 새로운 자원 생성<br>
+● PUT: 존재하는 자원에 대한 변경<br>
+● DELETE: 존재하는 자원에 대한 삭제<br>
+
+● HEAD: 서버 헤더정보 요청, ResponseBody 반환하지 않음<br>
+● OPTIONS: 서버 옵셕들을 확인하기 위한 요청. CORS에서 사용<br>
+
+<br>
+
+## 📌 HTTP Request Method
+
+● 2xx: 성공<br>
+● 3xx: 리다이렉션<br>
+● 4xx: 클라이언트 에러<br>
+● 500: 서버 에러<br>
 
 <br>
 
