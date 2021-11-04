@@ -10,6 +10,6 @@
 
 <br>
 
-## [🔗 RealTime Data Transmission](3_real_time_data_transmission)
+## [🔗 Real-time two-way communication](3_real_time_two_way_communication)
 
 <br>
