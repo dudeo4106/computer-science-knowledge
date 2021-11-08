@@ -25,20 +25,25 @@ Polling, Long Polling과 달리 클라이언트와 서버 사이의 연결을 �
 
 ## 📌 WebSocket
 
-HTTP의 한계를 극복하고 실시간(양방향통신) 서비스 개발을 위해 만들어졌다.
+HTTP의 한계를 극복하고 실시간(양방향통신) 서비스 개발을 위해 만들어졌다.<br>
+즉 WebSocket 프로토콜은 접속 확립에 HTTP를 사용하지만 그 후의 통신은 WebSocket 독자의 프로토콜로 이루어진다.
 
 클라이언트와 서버간의 양방향 통신을 수행하려면 클라이언트가 서버로 HTTP Upgrade 요청을 보내야한다. 이를 WebSocket Handshake라고 한다.
 
-서버가 커넥션을 Upgrade 할 경우, HTTP 101응답을 클라이언트로 보내고 서버는 Handshake가 성공적으로 수행되었다고 판단하면 서버/클라리언트 사이의 커넥션을 WebSocket 프로토콜로 Upgrade한다.<br>
+서버가 커넥션을 Upgrade 할 경우, HTTP 101응답을 클라이언트로 보내고 서버는 Handshake가 성공적으로 수행되었다고 판단하면 서버/클라이언트 사이의 커넥션을 WebSocket 프로토콜로 Upgrade한다.<br>
 즉 클라이언트/서버 사이의 HTTP 101응답이 전달되면 양방향 통신이 가능해진다.
+
+빠른 업데이트가 필요한 채팅, 주식, 비디오 관련 분야에서 Polling방식과 비교해, 더욱 적합하다고 할 수 있다. 
 
 ## 📌 Socket.io
 
-JavaScript를 이용하여 브라우저 종류에 상관없이 실시간 웹을 구현할 수 있도록 한 기술이다.
-
+JavaScript를 이용하여 브라우저 종류에 상관없이 실시간 웹을 구현할 수 있도록 한 기술이다.<br>
 표준 기술이 아니고 Node.js모듈이며 오픈소스이다.
 
-WebSocket, Ajax Long Polling / Multi part Streaming, JSONP polling등을 하나의 API로 추상화 한것이다.
+WebSocket, Ajax Long Polling, Ajax Multi part Streaming, FlashSocket, JSONP polling등을 하나의 API로 추상화 한것이다.<br>
+
+예를 들어 브라우저에 FlashSocket지원 버전이 설치되어 있으면 FlashSocket을 사용하고, 없다면 Ajax Long Polling방식을 사용한다.<br>
+개발자가 각 기술을 깊이 이해하지 못해도 사용할 수 있으며 JavaScript를 이용하여 브라우저 종류에 상관없이 실시간 웹을 구현할 수 있도록 한 기술
 
 <br>
 

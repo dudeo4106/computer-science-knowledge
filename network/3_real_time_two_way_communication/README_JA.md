@@ -25,7 +25,26 @@ PollingやLong Pollingとは異なり、クライアントとサーバ間の接�
 
 ## 📌 WebSocket
 
+HTTPの限界を克服し、リアルタイム(双方向通信)サービスの開発のために作られました。<br>
+つまりWebSocket プロトコルは接続確立にHTTP を使用するが、その後の通信はWebSocket 独自のプロトコルからなります。
+
+クライアントとサーバ間の双方向通信を行うためには、クライアントがサーバにHTTP Upgradeの要請を送らなければなりません。 これをWebSocket Handshakeといいます。
+
+サーバーがコネクションをUpgradeする場合、HTTP 101応答をクライアントに送り、サーバーはHandshake が成功的に実行されたと判断すると、サーバー/クライアント間のコネクションをWebSocketプロトコルにUpgradeします。<br>
+つまり、クライアント/サーバ間のHTTP 101応答が伝達されると、双方向通信が可能になる。
+
+素早いアップデートが必要なチャット、株式、ビデオ関連分野でPolling方式と比較して、より適しているといえるでしょう。
+
 ## 📌 Socket.io
+
+JavaScriptを利用して、ブラウザの種類を問わずリアルタイムでWebを実現できるようにした技術です。<br>
+標準技術ではなくNode.jsモジュールでありオープンソースです。
+
+WebSocket、Ajax Long Polling, Ajax Multipart Streaming、Flash Socket、JSONP pollingなどを1つのAPIとして抽象化したものです。<br>
+
+例えば、ブラウザにFlash Socket対応バージョンがインストールされていればFlash Socketを使用し、なければAjax Long Polling方式を使用します。<br>
+開発者が各技術を深く理解できなくても使用でき、JavaScriptを利用してブラウザの種類を問わずリアルタイムでWebを実現できるようにした技術
+
 
 <br>
 
