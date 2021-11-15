@@ -66,6 +66,18 @@ TCP/IP 프로토콜을 이용해서 통신을 하는 응용프로그램이 데�
 
 ![3WayHandshake](./image/3_way_handshake.png)
 
+<br>
+
+## 📌 3-way handshake 과정
+
+1. SYN 세그먼트: 클라이언트는 Source port에 자신을 나타내는 port number를 넣고, Destination port 에는 서버를 가리키는 port number를 넣는다. Sequence number에는 클라이언트의 초기 순서 번호, Acknowledgment number에는 0, Flag는 SYN bit를 1로 설정하여 전송한다.
+2. SYN + ACK 세그먼트: 서버는 Source port에 자신을 나타내는 port number를 넣고, Destination port에는 송신자를 나타내는 port number를 넣는다. Sequence number에는 서버의 초기 순서 번호, Acknowledgment number에는 "클라이언트의 초기 순서 번호 + 1" 의 값을 넣고, Flag는 SYN과 ACK bit를 모두 1로 설정하여 전송한다.
+3. ACK 세그먼트: 1번의 클라이언트는와 동일하게 Source port와 Destination port를 설정, Acknowledgment number에는 “서버의 초기 순서 번호 + 1” 의 값을 넣고, Flag는 ACK bit를 1로 설정하여 전송한다.
+
+이와 같은 방식으로 통신하는 것이 신뢰성 있는 연결인 3-Way Handshaking 방식이다.
+
+<br>
+
 ---
 
 📚 참고 : <br>
@@ -80,3 +92,5 @@ TCP/IP 프로토콜을 이용해서 통신을 하는 응용프로그램이 데�
 [https://mindgear.tistory.com/206](https://mindgear.tistory.com/206)
 <br>
 [https://blog.daum.net/tlos6733/47](https://blog.daum.net/tlos6733/47)
+<br>
+[https://www.youtube.com/watch?v=ikDVGYp5dhg&t=785s](https://www.youtube.com/watch?v=ikDVGYp5dhg&t=785s)
