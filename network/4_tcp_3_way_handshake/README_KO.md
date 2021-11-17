@@ -4,7 +4,7 @@
 
 ## 📌 What is 3-way handshake
 
-TCP가 속해있는 Transport Layer는 두 호스트 간에 녀결을 맺고 최종적인 목적지까지 데이터를 전달하는 기능을 한다.<br>
+TCP가 속해있는 Transport Layer는 두 호스트 간에 연결을 맺고 최종적인 목적지까지 데이터를 전달하는 기능을 한다.<br>
 TCP에서 연결지향적인 특성을 갖게 해주는 과정이 3-way handshake 방식이다.
 
 구체적으로는 TCP/IP 프로토콜을 이용해서 통신을 하는 응용프로그램이 데이터를 전송하기 전에, 
@@ -42,7 +42,7 @@ TCP 세그먼트 안의 데이터의 송신 바이트 흐름의 위치를 가리
   |URG|ACK|PSH|RST|SYN|FIN|
   |---|---|---|---|---|---|
 
-- SYN(Synchronization): TCP 에서 세션을 성립할 때 가장먼저 보내는 패킷, 시퀀스 번호를 임의적으로 설정하여 세션을 연결하는 데에 사용된다(초기에는 시퀀스 번호를 보낸다.)
+- SYN(Synchronization): TCP 에서 세션을 성립할 때 가장 먼저 보내는 패킷, 시퀀스 번호를 임의적으로 설정하여 세션을 연결하는 데에 사용된다(초기에는 시퀀스 번호를 보낸다.)
 
 - ACK(Acknowledgement): 상대방으로부터 패킷을 받았다는 걸 알려주는 패킷.<br>
   받는 사람이 보낸 사람 시퀀스 번호에 TCP 계층에서 길이 또는 데이터 양을 더한 것과 같은 ACK를 보냅니다.(보통 +1 하여 보냄) ACK 응답을 통해 보낸 패킷에 대한 성공, 실패를 판단하여 재전송 하거나 다음 패킷을 전송
@@ -51,7 +51,7 @@ TCP 세그먼트 안의 데이터의 송신 바이트 흐름의 위치를 가리
   이 패킷을 보내는 곳이 현재 접속하고 있는 곳과 즉시 연결을 끊고자 할 때 사용, 즉 연결이 확립된 회선에 강제로 리셋을 요청하는 것
 
 - PSH(Push): 받은 데이터를 즉시 목적지인 OSI 7 Layer 의 Application 계층으로 전송하도록 하는 FLAG.<br>
-  대화형 트랙픽에 사용되는 것으로 버퍼가 채워지기를 기다리지 않고 데이터를 전달한다. 데이터는 버퍼링 없이 바로 위 계층이 아닌 7 계층의 응용프로그램으로 바로 전달한다.
+  대화형 트래픽에 사용되는 것으로 버퍼가 채워지기를 기다리지 않고 데이터를 전달한다. 데이터는 버퍼링 없이 바로 위 계층이 아닌 7 계층의 응용프로그램으로 바로 전달한다.
 
 - URG(Urgent): Urgent pointer 유효한 것인지를 나타낸다.<br>
   Urgent pointer란 긴급한 정도를 나타내는데, 이 플래그가 유효하다면 다른 패킷보다 해당패킷을 먼저 처리하도록 요청할 것이다.
@@ -72,7 +72,7 @@ TCP/IP 프로토콜을 이용해서 통신을 하는 응용프로그램이 데�
 
 1. SYN 세그먼트: 클라이언트는 Source port에 자신을 나타내는 port number를 넣고, Destination port 에는 서버를 가리키는 port number를 넣는다. Sequence number에는 클라이언트의 초기 순서 번호, Acknowledgment number에는 0, Flag는 SYN bit를 1로 설정하여 전송한다.
 2. SYN + ACK 세그먼트: 서버는 Source port에 자신을 나타내는 port number를 넣고, Destination port에는 송신자를 나타내는 port number를 넣는다. Sequence number에는 서버의 초기 순서 번호, Acknowledgment number에는 "클라이언트의 초기 순서 번호 + 1" 의 값을 넣고, Flag는 SYN과 ACK bit를 모두 1로 설정하여 전송한다.
-3. ACK 세그먼트: 1번의 클라이언트는와 동일하게 Source port와 Destination port를 설정, Acknowledgment number에는 “서버의 초기 순서 번호 + 1” 의 값을 넣고, Flag는 ACK bit를 1로 설정하여 전송한다.
+3. ACK 세그먼트: 1번의 클라이언트와 동일하게 Source port와 Destination port를 설정, Acknowledgment number에는 “서버의 초기 순서 번호 + 1” 의 값을 넣고, Flag는 ACK bit를 1로 설정하여 전송한다.
 
 이와 같은 방식으로 통신하는 것이 신뢰성 있는 연결인 3-Way Handshaking 방식이다.
 
